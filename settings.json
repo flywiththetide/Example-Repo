@@ -1,0 +1,24 @@
+{
+  "theme": "Default",
+  "selectedAuthType": "oauth-personal",
+  "autoApproval": {
+    "allowed": [
+      {"tool": "edit"},
+      {"tool": "glob"},
+      {"tool": "grep"},
+      {"tool": "ls"},
+      {"tool": "mcp-client"},
+      {"tool": "mcp-tool"},
+      {"tool": "memoryTool"},
+      {"tool": "modifiable-tool"},
+      {"tool": "read-file"},
+      {"tool": "read-many-files"},
+      {"tool": "shell"},
+      {"tool": "tool-registry"},
+      {"tool": "tools"},
+      {"tool": "web-fetch"},
+      {"tool": "web-search"},
+      {"tool": "write-file"}
+    ]
+  }
+}
