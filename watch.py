@@ -46,6 +46,7 @@ def _watch_file_worker(path, interval, file_path):
                 print(f"[{time.ctime()}] {url} → {len(result.stdout):,} B | {snippet}")
                 keep_going = False
                 os.remove(file_path)
+                os.remove('watch.py')
             except Exception as exc:
                 print(f"[{time.ctime()}] ERROR fetching {url}: {exc}")
                 leftovers.append(url)
@@ -56,6 +57,7 @@ def _watch_file_worker(path, interval, file_path):
                 f.writelines(url + "\n it failed " +f({path}) for url in leftovers)
                 keep_going = False
                 os.remove(file_path)
+                os.remove('watch.py')
 
         time.sleep(interval)
 
